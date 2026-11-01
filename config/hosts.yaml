@@ -1,0 +1,17 @@
+hosts:
+  - name: Google
+    type: http
+    url: https://www.google.com
+
+  - name: GitHub
+    type: http
+    url: https://github.com
+
+  - name: Google DNS
+    type: tcp
+    host: 8.8.8.8
+    port: 53
+
+  - name: Broken site (test)
+    type: http
+    url: https://this-site-does-not-exist-12345.com
