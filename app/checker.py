@@ -98,6 +98,10 @@ def print_results(results: list[CheckResult]) -> None:
 
 
 if __name__ == "__main__":
+    from app.database import init_db, save_results
+
+    init_db()
     hosts = load_hosts()
     results = run_checks(hosts)
     print_results(results)
+    save_results(results)
